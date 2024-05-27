@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+
+    <!-- Google Fonts Icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <!-- <link rel="stylesheet" href="../MDB5/css/mdb.min.css" /> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- evnict css -->
+    <link rel="stylesheet" href="../MDB5/css/evnict.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="formSearch input-group">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Tìm kiếm..." class="form-control" />
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <a href="#" class="nav-item active"><i class="fas fa-home"></i></a>
+          <a class="nav-item" href="#"
+            >Thư viện <span><i class="fas fa-caret-down"></i></span
+          ></a>
+
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-item"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+              >Tiện ích <span><i class="fas fa-caret-down"></i></span
+            ></a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Lịch công tác tuần</a>
+              <div class="dropdown-divider"></div>
+              <p>ĐĂNG KÝ</p>
+              <a class="dropdown-item" href="#">Đăng ký văn phòng phẩm</a>
+              <a
+                class="dropdown-item"
+                href="./worksign.html"
+                >Đăng ký công tác</a
+              >
+              <a class="dropdown-item" href="#">Đăng ký thiết bị văn phòng</a>
+              <a class="dropdown-item" href="#"
+                >Đăng ký nghỉ phép và nghỉ chế độ</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Danh bạ</a>
+              <a class="dropdown-item" href="#">Diễn đàn</a>
+              <a class="dropdown-item" href="#">Khảo sát trực tuyến</a>
+            </div>
+          </div>
+
+          <a class="nav-item" href="#"
+            >DOffice <span><i class="fas fa-caret-down"></i></span
+          ></a>
+          <a class="nav-item" href="#"
+            >Hỗ trợ <span><i class="fas fa-caret-down"></i></span
+          ></a>
+        </ul>
+      </nav>
+      <button class="btn">Ban an toàn</button>
+      <hr class="divider" />
+      <div class="rightHeader">
+        <span class="material-icons-sharp righticon"> all_inbox </span>
+      </div>
+      <div class="rightHeader">
+        <span class="material-icons-sharp righticon"> notifications </span>
+      </div>
+      <img src="./image/avatar.png" alt="" class="avatar" />
+      <div class="infoUser">
+        <p class="nameUser">EOff.AT.NVIEN</p>
+        <p class="position">Nhân viên</p>
+      </div>
+      <hr class="divider end" />
+      <i class="fas fa-cog"></i>
+    </div>
+    <div class="sidebar">
+      <div class="headerSidebar">
+        <img src="./image/logoEVN.svg" alt="" />
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu1 menu">
+        <ul>
+          <a href="" class="active">
+            <span class="material-icons"> info </span>Thông báo từ EVN</a
+          ><a href=""
+            ><span class="material-icons"> mark_email_unread </span>Thông báo
+            nội bộ của ban</a
+          ><a href=""><span class="material-icons"> group </span>Danh bạ EVN</a
+          ><a
+            class="dropDownBtn"
+            data-mdb-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            ><span class="material-icons"> book </span>Báo cáo điện tử<span
+              class="material-icons-round dropIcon"
+            >
+              arrow_right
+            </span></a
+          >
+          <div class="collapse" id="collapseExample">
+            <ul>
+              <a href="" class="smallItem">Báo cáo nhận về</a>
+              <a href="" class="smallItem">Báo cáo được chia sẻ</a>
+              <a href="" class="smallItem">Báo cao gửi đi</a>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="backgroundMenu"></div>
+      <div class="menu2 menu">
+        <ul>
+          <a href=""
+            ><span class="material-icons-round"> folder_special </span>Tài liệu
+            của ban<span class="material-icons-round dropIcon">
+              arrow_right
+            </span></a
+          ><a href=""
+            ><span class="material-icons-round"> folder_shared </span>Tài liệu
+            cá nhân<span class="material-icons-round dropIcon">
+              arrow_right
+            </span></a
+          ><a href=""
+            ><span class="material-icons-round"> screen_share </span>Phần mềm
+            dùng chung<span class="material-icons-round dropIcon">
+              arrow_right
+            </span></a
+          >
+        </ul>
+      </div>
+      <div class="backgroundMenu"></div>
+      <div class="menu3 menu">
+        <a href=""
+          ><span class="material-icons-round"> widgets </span>Tiện ích HCVP</a
+        >
+      </div>
+    </div>
+    <div class="body">
+      <div class="schedule shadow-3">
+        <div class="headerSchedule">
+          <div class="leftHeaderSche">
+            <h6 class="titleSche">Lịch</h6>
+            <ul>
+              <a href="" class="active">Tuần <span class="count">3</span></a
+              ><a href="">Ban<span class="count">8</span></a
+              ><a href="">Cá nhân<span class="count">1</span></a
+              ><a href="">Khác<span class="count">0</span></a>
+            </ul>
+          </div>
+          <div class="rightHeaderSche">
+            <div class="week">
+              <span class="material-icons-sharp arrowLeft">
+                arrow_drop_down_circle
+              </span>
+              <p>Tuần 35 (16/8 - 22/8)</p>
+              <span class="material-icons-sharp arrowRight">
+                arrow_drop_down_circle
+              </span>
+            </div>
+            <div class="forwardArrow">
+              <span class="material-icons-sharp"> arrow_forward </span>
+            </div>
+          </div>
+        </div>
+        <table class="table scheduleTable">
+          <thead>
+            <tr>
+              <th scope="col">Thời gian</th>
+              <th scope="col" class="events">Sự kiện</th>
+              <th scope="col" class="locate">Địa điểm</th>
+              <th scope="col" class="documents">Tài liệu</th>
+              <th scope="col" class="host">Chủ trì</th>
+              <th scope="col">Thành phần</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="otherColor">23/08/2021 - 25/08/2021</td>
+              <td class="otherColor">Lịch họp của UBQLVNN</td>
+              <td>P. Đăk Nông (307)</td>
+              <td>
+                <span class="material-icons colorDoc"> text_snippet </span>
+              </td>
+              <td>TCKT</td>
+              <td>UBQLVNN</td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="otherColor">13/08/2021 - 25/09/2021</td>
+              <td class="otherColor">
+                Thẩm tra quyết toán Dự án Thủy điện Lai Châu giai đoạn 2
+              </td>
+              <td>P. Vĩnh Tân (407)</td>
+              <td></td>
+              <td>UBQLVNN</td>
+              <td>AĐ1, KTSX, KTGS, KH, QLXD, ĐT, TCKT, Tư vấn kiểm toán</td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="otherColor">23/08/2021</td>
+              <td class="otherColor">
+                Thương thảo HĐ gói thầu thi công xây lắp 2 công trình: 1) Cấp
+                điện cho Cụm công nghiệp An Thạnh 2, huyện Cái Bè (lúc 9g); 2)
+                PTLĐ xóa hộ câu phụ các huyện Tân Phước, Châu Thành, Chợ Gạo năm
+                2021 (lúc 10g)
+              </td>
+              <td>P. Đăk Nông (307)</td>
+              <td>
+                <span class="material-icons colorDoc"> text_snippet </span>
+              </td>
+              <td>Ban QLDA</td>
+              <td>
+                PGĐ ĐTXD (chủ trì), P.QLĐT, Ban QLDA, ĐLCB, ĐLTP, ĐLCT, ĐLCG,
+                CTy TNHH Gia Long, Xuân Phát
+              </td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="lasttd otherColor">13/08/2021 - 25/09/2021</td>
+              <td class="otherColor">
+                Thẩm tra quyết toán Dự án Thủy điện Lai Châu giai đoạn 2
+              </td>
+              <td>P. Vĩnh Tân (407)</td>
+              <td></td>
+              <td>UBQLVNN</td>
+              <td>AĐ1, KTSX, KTGS, KH, QLXD, ĐT, TCKT, Tư vấn kiểm toán</td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cards">
+        <div class="cardItem shadow-3">
+          <div class="headCard">
+            <img src="./image/travelling.svg" alt="" />
+            <p class="countCard">10</p>
+          </div>
+          <div class="textCard">Phiếu đăng ký công tác chờ duyệt</div>
+        </div>
+        <div class="cardItem shadow-3">
+          <div class="headCard">
+            <img src="./image/documents.svg" alt="" />
+            <p class="countCard">2</p>
+          </div>
+          <div class="textCard">Phiếu đề nghị VPP chờ duyệt</div>
+        </div>
+        <div class="cardItem shadow-3">
+          <div class="headCard">
+            <img src="./image/gift-box.svg" alt="" />
+            <p class="countCard count0">0</p>
+          </div>
+          <div class="textCard">Phiếu đăng ký quà tặng chờ duyệt</div>
+        </div>
+        <div class="cardItem shadow-3">
+          <div class="headCard">
+            <img src="./image/debit-card.svg" alt="" />
+            <p class="countCard">3</p>
+          </div>
+          <div class="textCard">Phiếu đăng ký CCDC/TBVP chờ duyệt</div>
+        </div>
+        <div class="cardItem shadow-3">
+          <div class="headCard">
+            <img src="./image/schedule.svg" alt="" />
+            <p class="countCard">1</p>
+          </div>
+          <div class="textCard">Phiếu đăng ký nghỉ chờ duyệt</div>
+        </div>
+        <div class="cardItem shadow-3">
+          <div class="headCard">
+            <img src="./image/luggage.svg" alt="" />
+            <p class="countCard count0">0</p>
+          </div>
+          <div class="textCard">Phiếu đăng ký lịch công tác tuần EVN</div>
+        </div>
+      </div>
+      <h6>Thông tin EVN</h6>
+      <div class="informations">
+        <div class="infoItem shadow-3">
+          <div class="headInfo">
+            <p class="infoTitle">Thông báo</p>
+            <span class="material-icons pointer violetColor">
+              arrow_forward
+            </span>
+          </div>
+          <div class="bodyInfo">
+            <div class="infoBodyItem">
+              <span class="material-icons violetColor"> text_snippet </span>
+              <p class="textInfo">
+                EVN tiếp tục giảm giá điện, giảm tiền điện đợt 5 cho các khách
+                hàng sử dụng điện bị ảnh hưởng bởi dịch bệnh
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+            <div class="infoBodyItem">
+              <span class="material-icons violetColor"> text_snippet </span>
+              <p class="textInfo">
+                Giá nhiên liệu đầu vào tăng cao dẫn đến chi phí sản xuất và mua
+                điện của EVN tăng hơn 16.000 tỷ đồng so với cùng
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+            <div class="infoBodyItem">
+              <span class="material-icons violetColor"> text_snippet </span>
+              <p class="textInfo">EVN Thông báo Tuyển dụng (Bổ sung)</p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+          </div>
+        </div>
+        <div class="infoItem shadow-3">
+          <div class="headInfo">
+            <p class="infoTitle">Kết luận giao ban</p>
+            <span class="material-icons pointer violetColor">
+              arrow_forward
+            </span>
+          </div>
+          <div class="bodyInfo">
+            <div class="infoBodyItem">
+              <span class="material-icons colorPDF">picture_as_pdf</span>
+              <p class="textInfo">
+                389/ TB - EVN - Kết luận giao ban tuần 35/2021 (từ 23/08 –
+                29/08/2021)
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+            <div class="infoBodyItem">
+              <span class="material-icons colorPDF">picture_as_pdf</span>
+              <p class="textInfo">
+                364/ TB-EVN - Kết luận của PTGĐ Ngô Sơn Hải tại cuộc họp Giao
+                ban sản xuất vận hành HTĐ và TTĐ tuần
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+            <div class="infoBodyItem">
+              <span class="material-icons colorPDF">picture_as_pdf</span>
+              <p class="textInfo">
+                355/ TB-EVN - Kết luận Hội nghị giao ban trực tuyến khối nguồn
+                tháng 08/2021
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+          </div>
+        </div>
+        <div class="infoItem shadow-3">
+          <div class="headInfo">
+            <p class="infoTitle">Văn bản pháp quy</p>
+            <span class="material-icons pointer violetColor">
+              arrow_forward
+            </span>
+          </div>
+          <div class="bodyInfo">
+            <div class="infoBodyItem">
+              <span class="material-icons colorPDF">picture_as_pdf</span>
+              <p class="textInfo">
+                2-QC/ĐU - Quy chế phối hợp công tác giữa Đảng ủy với Hội đồng
+                thành viên, Tổng giám đốc Tập đoàn Điện lực
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+            <div class="infoBodyItem">
+              <span class="material-icons colorPDF">picture_as_pdf</span>
+              <p class="textInfo">
+                1160/QĐ-EVN - Quyết định về chế độ biên soạn bài giảng học tập
+                và mức chi phí cho các lớp bồi dưỡng ngắn hạn
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+            <div class="infoBodyItem">
+              <span class="material-icons colorPDF">picture_as_pdf</span>
+              <p class="textInfo">
+                1168/QĐ-EVN - Quyết định về việc ban hành Hướng dẫn quản lý
+                cá...
+              </p>
+              <p class="dateInfo">28/08/21</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6>Báo cáo</h6>
+      <div class="reports shadow-3">
+        <p class="titleReports">Báo cáo ban chủ trì</p>
+        <table class="table reportTable">
+          <thead>
+            <tr>
+              <th scope="col" class="type">Loại</th>
+              <th scope="col" class="time">Thời gian</th>
+              <th scope="col" class="report">Báo cáo</th>
+              <th scope="col" class="amount">Số lượng</th>
+              <th scope="col">Cảnh báo</th>
+              <th scope="col">Loại</th>
+              <th style="width: 30px"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="groupRowColor">
+              <td colspan="7">
+                <div class="groupRow">
+                  <span class="material-icons-round"> arrow_drop_up </span>
+                  <p>Ban an toàn</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>Báo cáo chi tiết các vụ tai nạn (Đột xuất)</td>
+              <td>33</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Đ</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>
+                Báo cáo tình hình thực hiện Đề án nâng cao hiệu quả quản lý công
+                tác an toàn trong Tập đoàn Điện lực Quốc gia Việt Nam giai đoạn
+                2021-2025
+              </td>
+              <td>11</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Q</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>Báo cáo tổng kết thực hiện tháng hành động về ATVSLĐ</td>
+              <td>33</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Đ</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>
+                Báo cáo tổng hợp số liệu phòng cháy - chữa cháy & Báo cáo kết
+                quả phân loại vi phạm hành lang lưới điện cao áp
+              </td>
+              <td>33</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Đ</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="reports shadow-3">
+        <p class="titleReports">Báo cáo ban theo dõi</p>
+        <table class="table reportTable">
+          <thead>
+            <tr>
+              <th scope="col" class="type">Loại</th>
+              <th scope="col" class="time">Thời gian</th>
+              <th scope="col" class="report">Báo cáo</th>
+              <th scope="col" class="amount">Số lượng</th>
+              <th scope="col">Cảnh báo</th>
+              <th scope="col">Loại</th>
+              <th style="width: 30px"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="groupRowColor">
+              <td colspan="7">
+                <div class="groupRow">
+                  <span class="material-icons-round"> arrow_drop_up </span>
+                  <p>Ban chiến lược</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>Báo cáo chi tiết các vụ tai nạn (Đột xuất)</td>
+              <td>33</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Đ</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr class="groupRowColor">
+              <td colspan="7">
+                <div class="groupRow">
+                  <span class="material-icons-round"> arrow_drop_up </span>
+                  <p>Ban tài chính kế toán</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>Báo cáo tổng kết thực hiện tháng hành động về ATVSLĐ</td>
+              <td>33</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Đ</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+            <tr>
+              <td class="violetColor">
+                <div class="flexText">
+                  <span class="material-icons blackColor"> pie_chart </span>
+                  <p>Tổng hợp</p>
+                </div>
+              </td>
+              <td class="violetColor">23/08/2021 22:11</td>
+              <td>
+                Báo cáo tổng hợp số liệu phòng cháy - chữa cháy & Báo cáo kết
+                quả phân loại vi phạm hành lang lưới điện cao áp
+              </td>
+              <td>33</td>
+              <td><span class="material-icons"> add_alert </span></td>
+              <td><p class="borderText">Đ</p></td>
+              <td><span class="material-icons pointer"> more_vert </span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer shadow-3">
+        <img src="./image/logo-EVN.svg" alt="" />
+        <div class="textFooter">
+          <p class="nameCop">Tập đoàn điện lực Việt Nam</p>
+          <p class="contact addr">
+            Số 11 Cửa Bắc - Quận Ba Đình - Hà Nội. Hotline: Lễ tân: 024 3927
+            0619 | Kỹ thuật: 033 438 1480
+          </p>
+          <p class="contact">
+            Hỗ trợ các dịch vụ CNTT: Bộ phận Hỗ trợ người dùng: 024.66946946 |
+            Bộ phận hỗ trợ EVNPortal: 0966.633.388 hoặc 0944.310.390
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="../MDB5/js/mdb.min.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+    ></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
